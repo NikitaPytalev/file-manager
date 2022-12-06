@@ -1,0 +1,12 @@
+{
+  "name": "file-manager",
+  "version": "1.0.0",
+  "description": "RS School File Manager Assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "Nikita Pytalev",
+  "license": "ISC"
+}
