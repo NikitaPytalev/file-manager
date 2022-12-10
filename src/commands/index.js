@@ -2,7 +2,9 @@ import { INVALID_INPUT } from './errors.js';
 import add from './fs/add.js';
 import cat from './fs/cat.js';
 import cd from './nwd/cd.js';
+import compress from './zip/compress.js';
 import cp from './fs/cp.js';
+import decompress from './zip/decompress.js';
 import hash from './hash/hash.js'
 import ls from './nwd/ls.js';
 import mv from './fs/mv.js';
@@ -15,7 +17,9 @@ const commands = {
     add,
     cat,
     cd,
+    compress,
     cp,
+    decompress,
     hash,
     ls,
     ls,

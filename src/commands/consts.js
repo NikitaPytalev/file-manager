@@ -1,0 +1,1 @@
+export const BROTLI_EXT = '.br';
