@@ -5,6 +5,7 @@ import cd from './nwd/cd.js';
 import cp from './fs/cp.js';
 import ls from './nwd/ls.js';
 import mv from './fs/mv.js';
+import os from './os/os.js';
 import rm from './fs/rm.js';
 import rn from './fs/rn.js';
 import up from './nwd/up.js';
@@ -17,6 +18,7 @@ const commands = {
     ls,
     ls,
     mv,
+    os,
     rm,
     rn,
     up
