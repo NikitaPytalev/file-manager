@@ -2,8 +2,6 @@ import fs from 'fs';
 import { OPERATION_FAILED } from '../errors.js';
 import { validateArgumentsCount, validateIsFile } from '../validation.js';
 import { toAbsolute } from '../utils.js';
-import { stdout } from 'process';
-
 
 const cat = async args => {
     validateArgumentsCount(args.length, 1);
