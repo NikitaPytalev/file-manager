@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "RS School File Manager Assignment",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "node src/index.js"
   },
