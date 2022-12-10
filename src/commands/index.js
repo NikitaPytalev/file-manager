@@ -3,6 +3,7 @@ import add from './fs/add.js';
 import cat from './fs/cat.js';
 import cd from './nwd/cd.js';
 import cp from './fs/cp.js';
+import hash from './hash/hash.js'
 import ls from './nwd/ls.js';
 import mv from './fs/mv.js';
 import os from './os/os.js';
@@ -15,6 +16,7 @@ const commands = {
     cat,
     cd,
     cp,
+    hash,
     ls,
     ls,
     mv,
