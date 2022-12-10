@@ -1,4 +1,5 @@
 import readline from 'readline';
+import getCommand from './commands/index.js';
 import { homedir } from 'os';
 
 var rl = readline.createInterface({
@@ -15,13 +16,13 @@ greetUser();
 prompt(currentWorkingDirectoryMessage());
 
 function prompt (message) {
-    rl.question(message, input => {
+    rl.question(message, async input => {
         const command = input.toString().trim();
     
         if(command === ".exit") endProcess();
 
         try {
-            //execute command
+            await execute(input);
         } catch (e) {
             console.error(e.message);
         }
@@ -59,3 +60,13 @@ function endProcess () {
     console.log(getGoodbyeMessage());
     process.exit();
 }
+
+async function execute (input) {
+    const args = input.split(' ');
+    
+    const commandName = args.shift();
+
+    const command = getCommand(commandName);
+
+    await command(args);
+} 
