@@ -17,3 +17,14 @@ export const validateIsDirectory = async path => {
         throw new Error(OPERATION_FAILED);
     }
 };
+
+export const validateIsFile = async path => {
+    try {
+        const isFile = (await lstat(path)).isFile();
+
+        if (!isFile) 
+            throw new Error(OPERATION_FAILED);
+    } catch {
+        throw new Error(OPERATION_FAILED);
+    }
+};

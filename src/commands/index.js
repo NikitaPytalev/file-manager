@@ -1,12 +1,25 @@
 import { INVALID_INPUT } from './errors.js';
+import add from './fs/add.js';
+import cat from './fs/cat.js';
 import cd from './nwd/cd.js';
+import cp from './fs/cp.js';
 import ls from './nwd/ls.js';
+import mv from './fs/mv.js';
+import rm from './fs/rm.js';
+import rn from './fs/rn.js';
 import up from './nwd/up.js';
 
 const commands = {
+    add,
+    cat,
     cd,
+    cp,
     ls,
-    up,
+    ls,
+    mv,
+    rm,
+    rn,
+    up
 };
 
 export default commandName => {
